@@ -1,9 +1,9 @@
 let obj = {
     item: "pen",
-    price: 10,
+    price: 20,
 };
 
-let Output = `the cost of ${obj.item} is ${obj.price} rupees`;
+let Output = `The cost of ${obj.item} is ${obj.price} rupees`;
 console.log(Output);
 
 
