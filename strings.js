@@ -1,13 +1,18 @@
-let obj = {
-    item: "pen",
-    price: 20,
-};
+// let obj = {
+//     item: "pen",
+//     price: 20,
+// };
 
-let Output = `The cost of ${obj.item} is ${obj.price} rupees`;
-console.log(Output);
+// let Output = `The cost of ${obj.item} is ${obj.price} rupees`;
+// console.log(Output);
 
 
-// Template Literals
+// // Template Literals
 
-let SpecialString = `This is a template literals`;
-console.log(typeof SpecialString);
+// let SpecialString = `This is a template literals`;
+// console.log(typeof SpecialString);
+
+let str = "ApnaCollage";
+str = str.toUpperCase();
+console.log(str);
+
