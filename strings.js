@@ -1,15 +1,15 @@
-// let obj = {
-//     item: "pen",
-//     price: 20,
-// };
+let obj = {
+    item: "pen",
+    price: 20,
+};
 
-// let Output = `The cost of ${obj.item} is ${obj.price} rupees`;
+let Output = `The cost of ${obj.item} is ${obj.price} rupees`;
 // console.log(Output);
 
 
 // // Template Literals
 
-// let SpecialString = `This is a template literals`;
+let SpecialString = `This is a template literals`;
 // console.log(typeof SpecialString);
 
 // STRING METHODS IN JS
@@ -26,5 +26,10 @@ let str1 = "apna";
 let str2 = "collage";
 
 let res = str1 + str2;
-console.log(str.charAt(0));
 
+// Practice Question
+
+let fullName = prompt("Enter your fullname Without Spaces :");
+
+let Username = "@" + fullName + fullName.length
+console.log(Username);
