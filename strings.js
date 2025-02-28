@@ -12,7 +12,19 @@
 // let SpecialString = `This is a template literals`;
 // console.log(typeof SpecialString);
 
-let str = "ApnaCollage";
-str = str.toUpperCase();
-console.log(str);
+// STRING METHODS IN JS
+// 1. toUpparecase
+// 2. toLowerCase
+// 3. slice   Return part of string
+// 4. concat  joins str2 with str1
+// 5. replace
+// 6. charAt
+
+let str = "DHVANIT";
+
+let str1 = "apna";
+let str2 = "collage";
+
+let res = str1 + str2;
+console.log(str.charAt(0));
 
