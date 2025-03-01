@@ -12,6 +12,8 @@ let Output = `The cost of ${obj.item} is ${obj.price} rupees`;
 let SpecialString = `This is a template literals`;
 // console.log(typeof SpecialString);
 
+// IN js Strings is Immutable we cannot change that
+
 // STRING METHODS IN JS
 // 1. toUpparecase
 // 2. toLowerCase
