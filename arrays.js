@@ -9,16 +9,16 @@
 // Array is Mutable
 // In Arrays value is stored is linear fashion that means value stored in One Single line
 
-let heroes = ["Ironman", "Hulk", "Spiderman", "Thor", "Shaktiman", "antman"];
+// let hero = ["Ironman", "Hulk", "Spiderman", "Thor", "Shaktiman", "antman"];
 // for loop
 // for (let i=0; i < heroes.length; i++) {
 //     console.log(heroes[i]);
 // }
 
 // for of
-for (let hero of heroes) {
+// for (let hero of heroes) {
   // console.log(hero);
-}
+// }
 
 let cities = ["delhi", "mumbai", "pune", "hyderabad", "ahmedabad"];
 for (let city of cities) {
@@ -66,6 +66,12 @@ for (let val of items) {
 
 let foodItems = ["Pizza", "Burger", "Misalpav", "Cholepuri"];
 
-console.log(foodItems);
-console.log(foodItems.toString());
+// console.log(foodItems);
+// console.log(foodItems.toString());
 
+let marvelHeroes = ["thor", "spiderman", "ironman"];
+let dcHerors = ["superman", "batman"];
+let indianHeroes = ["shaktiman", "krish"];
+
+let heroes = marvelHeroes.concat(dcHerors, indianHeroes);
+console.log(heroes);
