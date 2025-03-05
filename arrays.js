@@ -63,15 +63,32 @@ for (let val of items) {
 // 4) Concat(): joins multiple arrays & return result
 // 5) unshift(): add to start
 // 6) shift(): delete from start & return
+// 7) slice(): returns a piece of an array
+// 8) splice(): change original array (add, remove, replace)
 
 let foodItems = ["Pizza", "Burger", "Misalpav", "Cholepuri"];
 
 // console.log(foodItems);
 // console.log(foodItems.toString());
 
-let marvelHeroes = ["thor", "spiderman", "ironman"];
+let marvelHeroes = ["thor", "spiderman", "ironman", "antman", "Dr. Strange"];
+
 let dcHerors = ["superman", "batman"];
 let indianHeroes = ["shaktiman", "krish"];
 
-let heroes = marvelHeroes.concat(dcHerors, indianHeroes);
-console.log(heroes);
+// let heroes = marvelHeroes.concat(dcHerors, indianHeroes);
+// console.log(heroes);
+
+// let val = marvelHeroes.shift();
+// console.log(val);
+
+// console.log(marvelHeroes);
+// console.log(marvelHeroes.slice(1, 3));
+
+let arr = [1, 2, 3, 4, 5, 6, 7];
+
+arr.splice(2, 2, 101, 110);
+
+// Practice Q2
+
+let compaines = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
