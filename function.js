@@ -78,3 +78,22 @@ const countVow = (str) => {
   }
   return count;
 };
+// for each loop in Array
+
+// arr.toEach(callback function)
+// Callback function -> function that is passed as an argument to another function
+
+let arr = ["Pune", "Ahmedabad", "Mumbai"];
+
+// arr.forEach((val, idx, arr) => {
+//   console.log(val.toUpperCase(), idx, arr);
+// });
+
+// Practice Q3
+// Qs: for a given array, print the square of each value using the forEach loop.
+
+let nums = [2, 3, 4, 5];
+
+nums.forEach((num) => {
+  console.log(num * num);
+});
