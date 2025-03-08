@@ -94,6 +94,13 @@ let arr = ["Pune", "Ahmedabad", "Mumbai"];
 
 let nums = [2, 3, 4, 5];
 
-nums.forEach((num) => {
+let calcSquare = (num) => {
   console.log(num * num);
+};
+
+
+// Some More Array Methods
+// 1. map
+let newArr = nums.map((val) => {
+  return val;
 });
