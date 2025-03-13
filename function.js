@@ -1,12 +1,12 @@
 // FUNCTION in JS
 // Function is a block of code that performs a specific task , can be invoked whenever needed
 
-function myFunction(msg, n) {
+function myFunction(msg) {
   //Parameter -> input
-  console.log(msg * n);
+  console.log(msg);
 }
 
-// myFunction("i love JS", 100); //Argument -> value
+myFunction("i love JS"); //Argument -> value
 
 // After return is unrechable code in function
 
