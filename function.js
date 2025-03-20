@@ -6,7 +6,7 @@ function myFunction(msg) {
   console.log(msg);
 }
 
-myFunction("i love JS"); //Argument -> value
+// myFunction("i love JS"); //Argument -> value
 
 // After return is unrechable code in function
 
@@ -85,9 +85,9 @@ const countVow = (str) => {
 // forEach Only Use for Arrys not for strings
 // forEach is Higher Order Function/Method
 
-let arr = ["Pune", "Ahmedabad", "Mumbai"];
+let city = ["Pune", "Ahmedabad", "Mumbai"];
 
-// arr.forEach((val, idx, arr) => {
+// city.forEach((val, idx, arr) => {
 //   console.log(val.toUpperCase(), idx, arr);
 // });
 
@@ -104,5 +104,15 @@ let nums = [44, 67, 59, 28];
 // 1. map
 let newArry = nums.map((val) => {
   return val * val;
-})
-console.log(newArry);
+});
+// console.log(newArry);
+
+// 2. filter
+
+let arr = [1, 2, 3, 4, 5, 6, 7];
+
+let evenArr = arr.filter((val) => {
+  return val % 2 == 0; 
+});
+
+console.log(evenArr);
