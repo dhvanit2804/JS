@@ -83,6 +83,7 @@ const countVow = (str) => {
 // arr.toEach(callback function)
 // Callback function -> function that is passed as an argument to another function
 // forEach Only Use for Arrys not for strings
+// forEach is Higher Order Function/Method
 
 let arr = ["Pune", "Ahmedabad", "Mumbai"];
 
@@ -93,15 +94,11 @@ let arr = ["Pune", "Ahmedabad", "Mumbai"];
 // Practice Q3
 // Qs: for a given array, print the square of each value using the forEach loop.
 
-let nums = [2, 3, 4, 5];
+let nums = [2, 3, 4, 5, 6];
 
-let calcSquare = (num) => {
+nums.forEach((num) => {
   console.log(num * num);
-};
-
+});
 
 // Some More Array Methods
 // 1. map
-let newArr = nums.map((val) => {
-  return val;
-});
