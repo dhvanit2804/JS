@@ -112,7 +112,25 @@ let newArry = nums.map((val) => {
 let arr = [1, 2, 3, 4, 5, 6, 7];
 
 let evenArr = arr.filter((val) => {
-  return val % 2 == 0; 
+  return val % 2 == 0;
 });
 
-console.log(evenArr);
+// console.log(evenArr);
+
+// 3. Reduce
+// performs some operations & reduces the array to a single value. It returns that Single value.
+
+let arr1 = [1, 2, 3, 4];
+
+const output = arr1.reduce((res, curr) => {
+  return res + curr;
+});
+
+// console.log("Sum =", output);
+
+let arr2 = [5, 6, 2, 1, 3];
+const result = arr2.reduce((prev , curr) => {
+  return prev > curr ? prev : curr;
+});
+
+console.log(result);
