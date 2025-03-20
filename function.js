@@ -94,11 +94,15 @@ let arr = ["Pune", "Ahmedabad", "Mumbai"];
 // Practice Q3
 // Qs: for a given array, print the square of each value using the forEach loop.
 
-let nums = [2, 3, 4, 5, 6];
+let nums = [44, 67, 59, 28];
 
-nums.forEach((num) => {
-  console.log(num * num);
-});
+// nums.forEach((num) => {
+//   console.log(num * num);
+// });
 
 // Some More Array Methods
 // 1. map
+let newArry = nums.map((val) => {
+  return val * val;
+})
+console.log(newArry);
