@@ -20,9 +20,9 @@ function myFunction(msg) {
 // console.log(val);
 
 //Sum function
-function sum(a, b) {
-  return a + b;
-}
+// function sum(a, b) {
+//   return a + b;
+// }
 
 // Arrow function
 const arrowSum = (a, b) => {
@@ -129,8 +129,47 @@ const output = arr1.reduce((res, curr) => {
 // console.log("Sum =", output);
 
 let arr2 = [5, 6, 2, 1, 3];
-const result = arr2.reduce((prev , curr) => {
+// Code to print largest Nums Of arry
+const result = arr2.reduce((prev, curr) => {
   return prev > curr ? prev : curr;
 });
 
-console.log(result);
+// console.log(result);
+
+// Practice Q4
+// We are given array of marks of Students. Filter our of the marks of students that Scored 90.
+
+let marks = [97, 64, 92, 36, 99, 72];
+
+const toppers = marks.filter((val) => {
+  return val > 90;
+});
+
+// console.log(toppers);
+
+// Practice Q5
+// Take a number n as input from user. Create an array of Numbers form 1 to n.
+// Use the reduce method to Calculate sum of all numbers in the array.
+// Use the reduce method to Calculate product of all numbers in the array.
+
+let n = prompt("Enter a number:");
+
+let arr3 = [];
+
+for (let i = 1; i <= n; i++) {
+  arr3[i - 1] = i;
+}
+
+console.log(arr3);
+
+let sum = arr3.reduce((res, curr) => {
+  return res + curr;
+});
+
+console.log("sum =", sum);
+
+let factorial = arr3.reduce((res, curr) => {
+  return res * curr;
+});
+
+console.log("factorial =", factorial);
