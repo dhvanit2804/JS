@@ -82,6 +82,7 @@ const countVow = (str) => {
 
 // arr.toEach(callback function)
 // Callback function -> function that is passed as an argument to another function
+// forEach Only Use for Arrys not for strings
 
 let arr = ["Pune", "Ahmedabad", "Mumbai"];
 
