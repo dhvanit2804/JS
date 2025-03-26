@@ -18,5 +18,8 @@
 
 // let heading = document.querySelector("h1");
 
-let h2 = document.querySelector("h2");
-h2.innerText = h2.innerText + " from Apna College Students";
+// let h2 = document.querySelector("h2");
+// h2.innerText = h2.innerText + " from Apna College Students";
+
+let divs = document.querySelectorAll("div");
+console.log(divs)
