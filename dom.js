@@ -7,8 +7,8 @@
 // console.dir(headings);
 // console.log(headings);
 
-let firstelement = document.querySelector("p"); // 1st element
-console.dir(firstelement); 
+// let firstelement = document.querySelector("p"); // 1st element
+// console.dir(firstelement); 
 
-const allelement = document.querySelectorAll("p");
-console.dir(allelement);
+// const allelement = document.querySelectorAll(".myClass"); // all element
+// console.dir(allelement);
