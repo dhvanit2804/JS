@@ -12,3 +12,11 @@
 
 // const allelement = document.querySelectorAll(".myClass"); // all element
 // console.dir(allelement);
+
+// let div = document.querySelector("div");
+// console.dir(div);
+
+// let heading = document.querySelector("h1");
+
+let h2 = document.querySelector("h2");
+h2.innerText = h2.innerText + " from Apna College Students";
