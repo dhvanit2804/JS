@@ -22,7 +22,10 @@
 // h2.innerText = h2.innerText + " from Apna College Students";
 
 let divs = document.querySelectorAll("div");
-console.log(divs)
+for(div of divs){
+    console.log(div);
+    
+}
 
 divs[0].innerText = "DHVANIT";
 
