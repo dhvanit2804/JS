@@ -23,3 +23,9 @@
 
 let divs = document.querySelectorAll("div");
 console.log(divs)
+
+divs[0].innerText = "DHVANIT";
+
+divs[1].innerText = "ASHKA";
+
+divs[2].innerText = "SAHIL";
