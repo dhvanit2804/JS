@@ -13,5 +13,11 @@ let newBtn = document.createElement("button");
 newBtn.innerText = "Click Me!";
 console.log(newBtn);
 
-let div = document.querySelector("div");
-div.append(newBtn);
+let p = document.querySelector("p");
+p.after(newBtn);
+p.remove();
+
+let newHeading = document.createElement("h1");
+newHeading.innerHTML = "<i>Hello I am Dhvanit!</i>";
+
+document.querySelector("body").prepend(newHeading);
