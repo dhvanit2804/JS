@@ -28,6 +28,10 @@ karanArjun.__proto__ = employee;
 
 
 class ToyotaCar {
+  constructor() {
+    console.log("Creating New Object");
+    
+  }
   start() {
     console.log("Car started");
   }
@@ -43,3 +47,5 @@ class ToyotaCar {
 
 let fortuner = new ToyotaCar();
 fortuner.setBrand("FORTUNER");
+let lexus = new ToyotaCar();
+lexus.setBrand("lexus");
