@@ -44,3 +44,4 @@ class ToyotaCar {
 let fortuner = new ToyotaCar();
 fortuner.setBrand("Fortuner");
 let lexus = new ToyotaCar();
+lexus.setBrand("Lexus");
