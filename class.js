@@ -35,7 +35,12 @@ class ToyotaCar {
   stop() {
     console.log("Car Stopped");
   }
+
+  setBrand(brand) {
+    this.brandName = brand;
+  }
 }
 
 let fortuner = new ToyotaCar();
+fortuner.setBrand("Fortuner");
 let lexus = new ToyotaCar();
