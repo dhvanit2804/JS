@@ -33,11 +33,12 @@ class Animal {
 
 class Lion extends Animal {
   constructor(name) {
-    super(name)
+    super(name);
     console.log("Object is Created and he is a lion...");
   }
 
   eats() {
+    super.eats();
     console.log("Lion is eating..");
   }
 }
