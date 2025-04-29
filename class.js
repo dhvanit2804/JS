@@ -4,14 +4,46 @@ const data = {
   email: "dhvanitparate123@gmail.com",
   phone: 9265920139,
   course: "JavaScript",
+};
+
+// let animal = {
+//   eats: true
+// };
+
+// let rabbit = {
+//   jumps: true
+// };
+
+// rabbit.__proto__ = animal;
+
+class Animal {
+  constructor(name) {
+    this.name = name;
+    console.log("Object is Created...");
+  }
+
+  eats() {
+    console.log("Animal is eating..");
+  }
+
+  jumps() {
+    console.log("Animal is jumping..");
+  }
 }
 
-let animal = {
-  eats: true
-};
+class Lion extends Animal {
+  constructor(name) {
+    super(name)
+    console.log("Object is Created and he is a lion...");
+  }
 
-let rabbit = {
-  jumps: true
-};
+  eats() {
+    console.log("Lion is eating..");
+  }
+}
 
-rabbit.__proto__ = animal;
+let a = new Animal("dhvanit");
+console.log(a);
+
+let l = new Lion("shera");
+console.log(l);
