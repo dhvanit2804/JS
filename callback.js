@@ -1,21 +1,34 @@
-console.log("callbackjs");
-console.log("DHVANIT PARATE");
+// Callback is a function passed as an argument to another function
 
-setTimeout(() => {
-  console.log("I am a inside a setTimeout Function");
-}, 3000);
-
-console.log("The End");
-
-const callback = (arg) => {
-    console.log(arg);
+function sum(a, b) {
+  console.log(a + b);
 }
 
-const loadScript = (src, callback) => {
-  let sc = document.createElement("script");
-  sc.src = src;
-  sc.onload = callback("DHVANIT PARATE");
-  document.head.append(sc);
-};
+function calc(a, b, sumCallback) {
+  sumCallback(a, b);
+}
 
-loadScript("https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js", callback );
+calc(5, 10, (a, b) => {
+  console.log(a + b);
+});
+
+// nesting if else
+
+let age = 20;
+if (age >= 60) {
+  console.log("Senior");
+} else if (age >= 18) {
+  console.log("Middle");
+} else {
+  console.log("child");
+}
+
+// nesting loop
+
+for (let i = 0; i < 5; i++) {
+  let str = "";
+  for (let j = 0; j < 5; j++) {
+    str = str + j;
+  }
+  console.log(i, str);
+}
