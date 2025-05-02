@@ -42,6 +42,14 @@ function getData(dataId, getNextData) {
   }, 2000);
 }
 
+// This is a Callback Hell Example
 getData(1, () => {
-  getData(2);
+  console.log("getting data2...");
+  getData(2, () => {
+    console.log("getting data3...");
+    getData(3, () => {
+      console.log("getting data4...");
+      getData(4);
+    });
+  });
 });
