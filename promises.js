@@ -9,8 +9,9 @@
 function getData(dataId, getNextData) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-        console.log("Data", dataId);
-        resolve("Success...")
+        // console.log("Data", dataId);
+        // resolve("Success...")
+        reject("error");
         if (getNextData) {
           getNextData();
         }
