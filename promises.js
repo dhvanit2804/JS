@@ -4,8 +4,8 @@
 const getPromise = () => {
   return new Promise((resolve, reject) => {
     console.log("Promise is Created...");
-    // resolve("Success...");
-    reject("Network Error...");
+    resolve("Success...");
+    // reject("Network Error...");
   });
 };
 
