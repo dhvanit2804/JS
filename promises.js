@@ -18,17 +18,23 @@
 //   console.log("Promise is Rejected...", err);
 // })
 
-// function getData(dataId, getNextData) {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//         console.log("Data", dataId);
-//         resolve("Success...")
-//         if (getNextData) {
-//           getNextData();
-//         }
-//       }, 5000);
+function getData(dataId) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("Data", dataId);
+      resolve("Success...");
+    }, 3000);
+  });
+}
+
+// Promise Chainning
+// getData(1)
+//   .then((res) => {
+//     return getData(2);
+//   })
+//   .then((res) => {
+//     console.log(res);
 //   });
-// }
 
 function asyncFunc1() {
   return new Promise((resolve, reject) => {
@@ -48,8 +54,29 @@ function asyncFunc2() {
   });
 }
 
-console.log("fetching data 1...");
-asyncFunc1().then((res) => {
-  console.log("fetching data 2...");
-  asyncFunc2().then((res) => {});
-})
+// console.log("fetching data 1...");
+// asyncFunc1().then((res) => {
+//   console.log("fetching data 2...");
+//   asyncFunc2().then((res) => {});
+// });
+
+
+// Async await
+// async function always return a promise 
+
+async function hello() {
+  console.log("hello")
+};
+
+function api() {
+  return new Promise((res, rej) => {
+    setTimeout(() => {
+      console.log("weather data");
+      res(200)
+    }, 2000);
+  })
+}
+
+async function getWeatherData() {
+  await api();
+}
