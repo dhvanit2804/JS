@@ -26,6 +26,12 @@ function getData(dataId) {
     }, 3000);
   });
 }
+// Async Await
+async function getAllData() {
+  await getData(1);
+  await getData(2);
+  await getData(3);
+}
 
 // Promise Chainning
 // getData(1)
@@ -79,4 +85,5 @@ function api() {
 
 async function getWeatherData() {
   await api();
+  await api()
 }
