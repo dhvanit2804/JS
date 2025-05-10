@@ -28,8 +28,11 @@ function getData(dataId) {
 }
 // Async Await
 async function getAllData() {
+  console.log("Fetching Data1...");
   await getData(1);
+  console.log("Fetching Data2...");
   await getData(2);
+  console.log("Fetching Data3...");
   await getData(3);
 }
 
