@@ -40,10 +40,23 @@
 //     a = a * i;
 // }
 // console.log(a)
-for (let i = 1; i < 4; i++){
-    let str = "";
-    for (let j = 1; j < 4; j++){
-        str += `${j} `;
-    }
-    console.log(str)
-} 
+
+// 7. Write a nested for loop that prints a 3x3 grid of numbers
+var hold = 1;
+for (let i = 1; i < 4; i++) {
+  let str = "";
+  for (let j = 1; j < 4; j++) {
+    str += `${hold} `;
+    hold++;
+  }
+  console.log(str);
+}
+
+// 8. Use a for loop to reverse an array [1, 2, 3, 4, 5]
+
+let arr = [1, 2, 3, 4, 5];
+let newArr = [];
+for (let i = arr.length - 1; i >= 0; i--) {
+  newArr.push(arr[i]);
+}
+console.log(newArr);
