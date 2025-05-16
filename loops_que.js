@@ -26,8 +26,24 @@
 //   }
 // }
 
-let a = 5;
-do {
-    console.log(a);
-    a--;
-} while (a>0);
+// 5. Use a do while loop to print the numbers from 5 to 1
+// let a = 5;
+
+// do {
+//     console.log(a);
+//     a--;
+// } while (a>0);
+
+// 6. Create a for loop that calculates the factorial of 5
+// let a = 1;
+// for(let i = 5; i > 0; i--){
+//     a = a * i;
+// }
+// console.log(a)
+for (let i = 1; i < 4; i++){
+    let str = "";
+    for (let j = 1; j < 4; j++){
+        str += `${j} `;
+    }
+    console.log(str)
+} 
