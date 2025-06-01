@@ -20,19 +20,18 @@ function person() {
   }
 }
 
-
-const plus = () =>{
-    let b = 10;
-    for (let i=1; i<b; i++){
-        console.log(i)
-    }
-}
+const plus = () => {
+  let b = 10;
+  for (let i = 1; i < b; i++) {
+    console.log(i);
+  }
+};
 // plus()
 
-function getPromise (){
-    return new Promise((resolve, reject)=>{
-        console.log("Promise is Created...");
-        // resolve("Success..")
-        reject("Error...")
-    })
+function getPromise() {
+  return new Promise((resolve, reject) => {
+    console.log("Promise is Created...");
+    // resolve("Success..")
+    reject("Error...");
+  });
 }
